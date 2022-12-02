@@ -1,7 +1,7 @@
 # FIFA API
 An API that provides information about the teams, players and coachs that are in the fifa tournament
 
-Endpoint: 
+Endpoint: [https://rebus-tech-test.up.railway.app/api/v1](https://rebus-tech-test.up.railway.app/api/v1 "https://rebus-tech-test.up.railway.app/api/v1")
 
 ### TEAM ROUTES
 
