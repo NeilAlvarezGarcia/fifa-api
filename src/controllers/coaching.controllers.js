@@ -5,7 +5,7 @@ import badRequest from "../helpers/bad-request.js";
 const addCoach = tryCatchFunction(async (req, res) => {
     const coach = await Coaching.create(req.body);
 
-    res.status(200).json({
+    res.status(201).json({
         status: true,
         coach
     })
@@ -56,7 +56,7 @@ const deleteCoach = tryCatchFunction(async (req, res) => {
 
     await Coaching.findByIdAndDelete(id);
 
-    res.status(200).json({
+    res.status(204).json({
         status: true,
         message: "coach was deleted successfuly"
     })

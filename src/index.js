@@ -5,7 +5,6 @@ import cors from 'cors';
 import routesHandler from './middlewares/routesHandler.js';
 import initApp from './helpers/init-app.js';
 import notFound from './middlewares/notFoundHandler.js';
-import errorHandler from './middlewares/errorHandler.js';
 
 const app = express();
 
@@ -21,9 +20,6 @@ app.use(cors());
 
 // routes
 routesHandler(app);
-
-// Erros handler
-app.use(errorHandler);
 
 // Not found handler
 app.use(notFound);

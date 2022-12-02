@@ -11,7 +11,7 @@ const addTeam = tryCatchFunction(async (req, res) => {
         teamBadge,
     })
 
-    res.status(200).json({
+    res.status(201).json({
         status: true,
         team
     })
@@ -74,7 +74,7 @@ const deleteTeam = tryCatchFunction(async (req, res) => {
 
     await Team.findByIdAndDelete(id);
 
-    res.status(200).json({
+    res.status(204).json({
         status: true,
         message: "Team was deleted successfuly"
     })
